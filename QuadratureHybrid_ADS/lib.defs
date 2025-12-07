@@ -1,0 +1,4 @@
+INCLUDE $HPEESOF_DIR/oalibs/analog_rf.defs
+INCLUDE $HPEESOF_DIR/oalibs/dsp.defs
+DEFINE mnwider_lab1_quadhybrid_lib mnwider_lab1_quadhybrid_lib
+ASSIGN mnwider_lab1_quadhybrid_lib libMode shared

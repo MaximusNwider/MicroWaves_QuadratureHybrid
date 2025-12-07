@@ -1,0 +1,47 @@
+
+hpeesofsim (*) 550.shp Jul 24 2021, MINT version 5
+    (64-bit windows built: Sat Jul 24, 2021 16:09:49 +0000)
+
+
+***** Simulation started at Sat Sep 20 17:31:33 2025
+      Running on host: "OHM0"
+      In Directory: "C:\ProgamData\Keysight\ADS\Lab1\mnwider_lab1_quadhybrid\data"
+      Process ID: 48816
+
+Warning detected by hpeesofsim in topology check during circuit set up.
+    Number of nodes with only one device attached (topology corrected): 4
+
+
+SP SP1[1] <mnwider_lab1_quadhybrid_lib:cell_2:schematic>   freq=(1.45 GHz->3.45 GHz)
+Warning detected by hpeesofsim during SP analysis 'SP1'.
+    UserValue(202.000000) < MinRecommendValue(0.000016) OR UserValue > MaxRecommendValue(0.157480) for 'W' in `TL9'
+
+Warning detected by hpeesofsim during SP analysis 'SP1'.
+    UserValue(118.000000) < MinRecommendValue(0.000016) OR UserValue > MaxRecommendValue(0.157480) for 'W' in `TL16'
+
+Warning detected by hpeesofsim during SP analysis 'SP1'.
+    UserValue(118.000000) < MinRecommendValue(0.000016) OR UserValue > MaxRecommendValue(0.157480) for 'W' in `TL15'
+
+Warning detected by hpeesofsim during SP analysis 'SP1'.
+    UserValue(202.000000) < MinRecommendValue(0.000016) OR UserValue > MaxRecommendValue(0.157480) for 'W' in `TL10'
+
+Warning detected by hpeesofsim during SP analysis 'SP1'.
+    UserValue(118.000000) < MinRecommendValue(0.000016) OR UserValue > MaxRecommendValue(0.157480) for 'W' in `TL11'
+
+Warning detected by hpeesofsim during SP analysis 'SP1'.
+    UserValue(118.000000) < MinRecommendValue(0.000016) OR UserValue > MaxRecommendValue(0.157480) for 'W' in `TL12'
+
+Warning detected by hpeesofsim during SP analysis 'SP1'.
+    UserValue(118.000000) < MinRecommendValue(0.000016) OR UserValue > MaxRecommendValue(0.157480) for 'W' in `TL14'
+
+Warning detected by hpeesofsim during SP analysis 'SP1'.
+    UserValue(202.000000) < MinRecommendValue(0.000157) OR UserValue > MaxRecommendValue(0.015748) for 'W1' in `Tee4'
+
+Warning detected by hpeesofsim during SP analysis 'SP1'.
+    UserValue(67396.236487) > MaxRecommendValue(5.000000) for 'Wlargest/Wsmallest' in `Tee4'
+
+
+
+Resource usage:
+  Total stopwatch time     =     2.84 seconds.
+

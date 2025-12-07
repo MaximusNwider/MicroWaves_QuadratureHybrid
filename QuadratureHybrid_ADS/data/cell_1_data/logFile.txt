@@ -1,0 +1,17 @@
+
+hpeesofsim (*) 550.shp Jul 24 2021, MINT version 5
+    (64-bit windows built: Sat Jul 24, 2021 16:09:49 +0000)
+
+
+***** Simulation started at Sat Sep 20 20:48:02 2025
+      Running on host: "OHM0"
+      In Directory: "C:\ProgamData\Keysight\ADS\Lab1\mnwider_lab1_quadhybrid\data"
+      Process ID: 28572
+
+
+SP SP1[1] <mnwider_lab1_quadhybrid_lib:cell_1:schematic>   freq=(1.45 GHz->3.45 GHz)
+
+
+Resource usage:
+  Total stopwatch time     =     0.62 seconds.
+
