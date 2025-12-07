@@ -39,16 +39,26 @@ This repository contains MATLAB tooling for comparing measured and simulated S-p
 
 ## Measurement vs. Simulation
 
-The following matrix displays every generated S-parameter figure found in `output/`.
+| S11                                                                                 | S12                                                                                 |
+| ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| <figure><img src="output/S11.png" alt="S11" /><figcaption>S11</figcaption></figure> | <figure><img src="output/S12.png" alt="S12" /><figcaption>S12</figcaption></figure> |
 
-![S11](output/S11.png) ![S12](output/S12.png)
+| S13                                                                                 | S14                                                                                 |
+| ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| <figure><img src="output/S13.png" alt="S13" /><figcaption>S13</figcaption></figure> | <figure><img src="output/S14.png" alt="S14" /><figcaption>S14</figcaption></figure> |
 
-![S13](output/S13.png) ![S14](output/S14.png)
+| S21                                                                                 | S22                                                                                 |
+| ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| <figure><img src="output/S21.png" alt="S21" /><figcaption>S21</figcaption></figure> | <figure><img src="output/S22.png" alt="S22" /><figcaption>S22</figcaption></figure> |
 
-![S21](output/S21.png) ![S22](output/S22.png)
+| S23                                                                                 | S31                                                                                 |
+| ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| <figure><img src="output/S23.png" alt="S23" /><figcaption>S23</figcaption></figure> | <figure><img src="output/S31.png" alt="S31" /><figcaption>S31</figcaption></figure> |
 
-![S23](output/S23.png) ![S31](output/S31.png)
+| S32                                                                                 | S33                                                                                 |
+| ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| <figure><img src="output/S32.png" alt="S32" /><figcaption>S32</figcaption></figure> | <figure><img src="output/S33.png" alt="S33" /><figcaption>S33</figcaption></figure> |
 
-![S32](output/S32.png) ![S33](output/S33.png)
-
-![S41](output/S41.png) ![S44](output/S44.png)
+| S41                                                                                 | S44                                                                                 |
+| ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| <figure><img src="output/S41.png" alt="S41" /><figcaption>S41</figcaption></figure> | <figure><img src="output/S44.png" alt="S44" /><figcaption>S44</figcaption></figure> |
