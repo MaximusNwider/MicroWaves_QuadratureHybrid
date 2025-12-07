@@ -1,55 +1,71 @@
 # Quadrature Hybrid Design Summary
 
-This repository contains MATLAB tooling for comparing measured and simulated S-parameters of a quadrature hybrid. The pipeline ingests VNA touchstone files alongside simulator exports, aligns the data to global S-parameter labels, and produces side-by-side comparison plots.
+<p align="justify">
+This repository contains MATLAB tooling for comparing measured and simulated S-parameters of a quadrature hybrid. The pipeline ingests VNA Touchstone files alongside simulator exports, aligns the data to global S-parameter labels, and produces side-by-side comparison plots suitable for documentation and verification.
+</p>
 
 | Layout                                                   | Schematic                                                      |
 | -------------------------------------------------------- | -------------------------------------------------------------- |
 | ![Quadrature Hybrid Layout](QuadratureHybrid_Layout.png) | ![Quadrature Hybrid Schematic](QuadratureHybrid_Schematic.png) |
 
-| Simulation Overview                                                |
+| ADS Simulation                                                     |
 | ------------------------------------------------------------------ |
 | ![Quadrature Hybrid Simulation Overview](QuadratureHybrid_Sim.png) |
 
+---
+
 ## Design Criteria
 
-- **Center frequency:** 2.45 GHz.
-- **Return loss at all ports:** S11, S22, S33, S44 < -25 dB at 2.45 GHz.
-- **Power division:** S21 and S31 > -3.5 dB at 2.45 GHz.
-- **Isolation:** S41 < -30 dB at 2.45 GHz.
-- **Phase balance:** Angle(S21) – Angle(S31) = 90° at 2.45 GHz.
+- **Center frequency:** 2.45 GHz
+- **Return loss at all ports:** S11, S22, S33, S44 < -25 dB at 2.45 GHz
+- **Power division:** S21 and S31 > -3.5 dB at 2.45 GHz
+- **Isolation:** S41 < -30 dB at 2.45 GHz
+- **Phase balance:** ∠S21 – ∠S31 = 90° at 2.45 GHz
 
-## Substrate properties
+---
 
-- **Substrate thickness (h):** 62 mil.
-- **Relative permittivity (εᵣ):** 4.4.
-- **Relative permeability (μᵣ):** 1.
-- **Conductor conductivity (σ):** 5.85 × 10⁷ S/m.
-- **Clearance to upper reference (hᵤ):** 3.93701 × 10³⁴ mil (effectively open).
-- **Copper thickness (t):** 1.5 mil.
-- **Dielectric loss tangent (tan δ):** 0.02.
-- **Surface roughness:** 0 mil.
+## Substrate Properties
 
-## Repository layout
+- **Substrate thickness (h):** 62 mil
+- **Relative permittivity (εᵣ):** 4.4
+- **Relative permeability (μᵣ):** 1
+- **Conductor conductivity (σ):** 5.85 × 10⁷ S/m
+- **Clearance to upper reference (hᵤ):** 3.93701 × 10³⁴ mil (effectively open)
+- **Copper thickness (t):** 1.5 mil
+- **Dielectric loss tangent (tan δ):** 0.02
+- **Surface roughness:** 0 mil
+
+---
+
+## Repository Layout
 
 - `main.m` — entry point that sets up paths, loads configuration, and launches the pipeline.
 - `run_sparam_project.m` — orchestrates file discovery, measurement/simulation alignment, and plotting.
 - `+config/` — default configuration values (paths, plotting options, axis limits).
-- `+io/` — parsers for measurement (`*.s2p`) and simulation (`*.txt`/`*.tab`/`*.dat`) data.
+- `+io/` — parsers for measurement (`*.s2p`) and simulation (`*.txt` / `*.tab` / `*.dat`) data.
 - `+plotting/` — routines that generate comparison figures and save them to `output/`.
 - `+util/` — helpers for path management and filename parsing.
 - `+data/` — sample measurement and simulation files for local runs.
 - `output/` — generated figures (`Sij.png`) for each available S-parameter.
 - `QuadratureHybrid_*.png` — reference layout, schematic, and simulation overview images.
-- `gerber` — layout description, fabrication ready
+- `gerber/` — layout description, fabrication-ready.
 
-## Running the code
+---
+
+## Running the Code
 
 1. Open MATLAB and change into the repository folder.
 2. Run the project entry point:
+
    ```matlab
    >> main
    ```
-   The script will read measurement and simulation files from the configured directories, then write comparison plots to `output/`.
+
+<p align="justify">
+The script will read measurement and simulation files from the configured directories, map the local two-port VNA data to the appropriate global S-parameter labels, and write comparison plots into the <code>output/</code> directory for inspection and documentation.
+</p>
+
+---
 
 ## Measurement vs. Simulation
 
