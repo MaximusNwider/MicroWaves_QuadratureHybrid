@@ -4,13 +4,13 @@
 This repository contains MATLAB tooling for comparing measured and simulated S-parameters of a quadrature hybrid. The pipeline ingests VNA Touchstone files alongside simulator exports, aligns the data to global S-parameter labels, and produces side-by-side comparison plots suitable for documentation and verification.
 </p>
 
-| Layout                                                   | Schematic                                                      |
-| -------------------------------------------------------- | -------------------------------------------------------------- |
-| ![Quadrature Hybrid Layout](QuadratureHybrid_Layout.png) | ![Quadrature Hybrid Schematic](QuadratureHybrid_Schematic.png) |
+| Layout                                                        | Schematic                                                           |
+| ------------------------------------------------------------- | ------------------------------------------------------------------- |
+| ![Quadrature Hybrid Layout](repo/QuadratureHybrid_Layout.png) | ![Quadrature Hybrid Schematic](repo/QuadratureHybrid_Schematic.png) |
 
-| ADS Simulation                                                     |
-| ------------------------------------------------------------------ |
-| ![Quadrature Hybrid Simulation Overview](QuadratureHybrid_Sim.png) |
+| ADS Simulation                                                          |
+| ----------------------------------------------------------------------- |
+| ![Quadrature Hybrid Simulation Overview](repo/QuadratureHybrid_Sim.png) |
 
 ---
 
@@ -47,7 +47,7 @@ This repository contains MATLAB tooling for comparing measured and simulated S-p
 - `+util/` — helpers for path management and filename parsing.
 - `+data/` — sample measurement and simulation files for local runs.
 - `output/` — generated figures (`Sij.png`) for each available S-parameter.
-- `QuadratureHybrid_*.png` — reference layout, schematic, and simulation overview images.
+- `repo/` — supporting figures
 - `gerber/` — layout description, fabrication-ready.
 
 ---
