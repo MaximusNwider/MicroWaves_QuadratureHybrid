@@ -41,12 +41,14 @@ This repository contains MATLAB tooling for comparing measured and simulated S-p
 
 The following matrix displays every generated S-parameter figure found in `output/`.
 
-| S11                    | S12                    | S13                    | S14                    |
-| ---------------------- | ---------------------- | ---------------------- | ---------------------- |
-| ![S11](output/S11.png) | ![S12](output/S12.png) | ![S13](output/S13.png) | ![S14](output/S14.png) |
-| S21                    | S22                    | S23                    | S31                    |
-| ---                    | ---                    | ---                    | ---                    |
-| ![S21](output/S21.png) | ![S22](output/S22.png) | ![S23](output/S23.png) | ![S31](output/S31.png) |
-| S32                    | S33                    | S41                    | S44                    |
-| ---                    | ---                    | ---                    | ---                    |
-| ![S32](output/S32.png) | ![S33](output/S33.png) | ![S41](output/S41.png) | ![S44](output/S44.png) |
+![S11](output/S11.png) ![S12](output/S12.png)
+
+![S13](output/S13.png) ![S14](output/S14.png)
+
+![S21](output/S21.png) ![S22](output/S22.png)
+
+![S23](output/S23.png) ![S31](output/S31.png)
+
+![S32](output/S32.png) ![S33](output/S33.png)
+
+![S41](output/S41.png) ![S44](output/S44.png)
