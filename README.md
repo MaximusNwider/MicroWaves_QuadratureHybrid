@@ -2,6 +2,14 @@
 
 This repository contains MATLAB tooling for comparing measured and simulated S-parameters of a quadrature hybrid. The pipeline ingests VNA touchstone files alongside simulator exports, aligns the data to global S-parameter labels, and produces side-by-side comparison plots.
 
+| Layout                                                   | Schematic                                                      |
+| -------------------------------------------------------- | -------------------------------------------------------------- |
+| ![Quadrature Hybrid Layout](QuadratureHybrid_Layout.png) | ![Quadrature Hybrid Schematic](QuadratureHybrid_Schematic.png) |
+
+| Simulation Overview                                                |
+| ------------------------------------------------------------------ |
+| ![Quadrature Hybrid Simulation Overview](QuadratureHybrid_Sim.png) |
+
 ## Design Criteria
 
 - **Center frequency:** 2.45 GHz.
@@ -10,9 +18,16 @@ This repository contains MATLAB tooling for comparing measured and simulated S-p
 - **Isolation:** S41 < -30 dB at 2.45 GHz.
 - **Phase balance:** Angle(S21) – Angle(S31) = 90° at 2.45 GHz.
 
-| Layout                                                   | Schematic                                                      | Simulation Overview                                                |
-| -------------------------------------------------------- | -------------------------------------------------------------- | ------------------------------------------------------------------ |
-| ![Quadrature Hybrid Layout](QuadratureHybrid_Layout.png) | ![Quadrature Hybrid Schematic](QuadratureHybrid_Schematic.png) | ![Quadrature Hybrid Simulation Overview](QuadratureHybrid_Sim.png) |
+## Substrate properties
+
+- **Substrate thickness (h):** 62 mil.
+- **Relative permittivity (εᵣ):** 4.4.
+- **Relative permeability (μᵣ):** 1.
+- **Conductor conductivity (σ):** 5.85 × 10⁷ S/m.
+- **Clearance to upper reference (hᵤ):** 3.93701 × 10³⁴ mil (effectively open).
+- **Copper thickness (t):** 1.5 mil.
+- **Dielectric loss tangent (tan δ):** 0.02.
+- **Surface roughness:** 0 mil.
 
 ## Repository layout
 
@@ -25,8 +40,7 @@ This repository contains MATLAB tooling for comparing measured and simulated S-p
 - `+data/` — sample measurement and simulation files for local runs.
 - `output/` — generated figures (`Sij.png`) for each available S-parameter.
 - `QuadratureHybrid_*.png` — reference layout, schematic, and simulation overview images.
-
-## Design Criteria
+- `gerber` — layout description, fabrication ready
 
 ## Running the code
 
@@ -39,26 +53,26 @@ This repository contains MATLAB tooling for comparing measured and simulated S-p
 
 ## Measurement vs. Simulation
 
-| S11                                                                                 | S12                                                                                 |
-| ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| <figure><img src="output/S11.png" alt="S11" /><figcaption>S11</figcaption></figure> | <figure><img src="output/S12.png" alt="S12" /><figcaption>S12</figcaption></figure> |
+| S11                                                     | S12                                                     |
+| ------------------------------------------------------- | ------------------------------------------------------- |
+| <figure><img src="output/S11.png" alt="S11" /></figure> | <figure><img src="output/S12.png" alt="S12" /></figure> |
 
-| S13                                                                                 | S14                                                                                 |
-| ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| <figure><img src="output/S13.png" alt="S13" /><figcaption>S13</figcaption></figure> | <figure><img src="output/S14.png" alt="S14" /><figcaption>S14</figcaption></figure> |
+| S13                                                     | S14                                                     |
+| ------------------------------------------------------- | ------------------------------------------------------- |
+| <figure><img src="output/S13.png" alt="S13" /></figure> | <figure><img src="output/S14.png" alt="S14" /></figure> |
 
-| S21                                                                                 | S22                                                                                 |
-| ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| <figure><img src="output/S21.png" alt="S21" /><figcaption>S21</figcaption></figure> | <figure><img src="output/S22.png" alt="S22" /><figcaption>S22</figcaption></figure> |
+| S21                                                     | S22                                                     |
+| ------------------------------------------------------- | ------------------------------------------------------- |
+| <figure><img src="output/S21.png" alt="S21" /></figure> | <figure><img src="output/S22.png" alt="S22" /></figure> |
 
-| S23                                                                                 | S31                                                                                 |
-| ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| <figure><img src="output/S23.png" alt="S23" /><figcaption>S23</figcaption></figure> | <figure><img src="output/S31.png" alt="S31" /><figcaption>S31</figcaption></figure> |
+| S23                                                     | S31                                                     |
+| ------------------------------------------------------- | ------------------------------------------------------- |
+| <figure><img src="output/S23.png" alt="S23" /></figure> | <figure><img src="output/S31.png" alt="S31" /></figure> |
 
-| S32                                                                                 | S33                                                                                 |
-| ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| <figure><img src="output/S32.png" alt="S32" /><figcaption>S32</figcaption></figure> | <figure><img src="output/S33.png" alt="S33" /><figcaption>S33</figcaption></figure> |
+| S32                                                     | S33                                                     |
+| ------------------------------------------------------- | ------------------------------------------------------- |
+| <figure><img src="output/S32.png" alt="S32" /></figure> | <figure><img src="output/S33.png" alt="S33" /></figure> |
 
-| S41                                                                                 | S44                                                                                 |
-| ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| <figure><img src="output/S41.png" alt="S41" /><figcaption>S41</figcaption></figure> | <figure><img src="output/S44.png" alt="S44" /><figcaption>S44</figcaption></figure> |
+| S41                                                     | S44                                                     |
+| ------------------------------------------------------- | ------------------------------------------------------- |
+| <figure><img src="output/S41.png" alt="S41" /></figure> | <figure><img src="output/S44.png" alt="S44" /></figure> |
